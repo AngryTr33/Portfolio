@@ -95,7 +95,7 @@ section{
 
 .section-page{
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 .section-page:nth-child(even){
     background-color: var(--jg-light-color);
