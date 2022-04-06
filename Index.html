@@ -24,12 +24,13 @@
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/hoverCard.css">
     <link rel="stylesheet" href="css/blogCard.css">
+    <link rel="stylesheet" href="css/contactForm.css">
 
 </head>
 
 <body>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
         <div class="container-xxl">
             <a class="navbar-brand" href="#">
                 <img src="img/personalLogoDarkTransparent.png" height="50">
@@ -37,7 +38,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon-jg">
+                    <i class="bi bi-list"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -85,7 +88,7 @@
 
     <!--Main Content Area-->
     <main class="container-xxl">
-
+        <!-- About Me -->
         <section id="about" class="section-page">
             <h1>About Me</h1>
             <div class="row">
@@ -131,7 +134,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Skills -->
         <section id="skills" class="section-page">
             <h1>My Skills</h1>
             <p>I am a creative problem solver. I build full-stack web and
@@ -175,9 +178,9 @@
                 </div>
             </div>
         </section>
-
+        <!-- Main Projects -->
         <section id="projects" class="section-page">
-            <h1>Things I have built</h1>
+            <h1>Primary Projects</h1>
             <p>Showcasing complete functional projects demonstrates what I
                 can bring to your project. I built these projects from the
                 ground up to demonstrate skill with front-end, back-end, security
@@ -232,9 +235,9 @@
                     </div>
                 </div>
         </section>
-
+        <!-- Coding Challenges -->
         <section id="challenges" class="section-page">
-            <h1>Smaller things I have built</h1>
+            <h1>Smaller Projects</h1>
             <p>Coding challenges are smaller in scope and scale than my full-stack projects. These problems are fun to
                 solve and also showcase some UI skills and front-end dev skills and javascript. All the projects are
                 published so you can easily see my work in action. Contact me if you would like to discuss any of my
@@ -327,9 +330,9 @@
                     </div>
                 </div>
         </section>
-
+        <!-- Blog Section -->
         <section id="blog" class="section-page">
-            <h1>Stuff I write about</h1>
+            <h1>Subjects I write about</h1>
             <p>I try to write on my blog on a weekly basis. I believe in shared knowledge and having access to multiple
                 viewpoints.
             </p>
@@ -394,14 +397,89 @@
                 </article>
             </div>
         </section>
-
+        <!-- Contact Form -->
         <section id="contact" class="section-page">
-            <h1>Let's chat</h1>
+            <h1 class="p-2">Contact Me</h1>
+            <div class="contactMe">
+                <form class="row p-2" netlify name="contactMe" data-netlify-recaptcha="true">
+                    <div class="row col-md-12">
+                        <div class="col-12 col-md-6 form-group">
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="firstName" id="inputFirstName"
+                                placeholder="First Name" required>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="lastName" id="inputLastName"
+                                placeholder="Last Name" required>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" id="inputEmail"
+                                placeholder="example@email.com" required>
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <label for="inputPhone" class="form-label">Phone (optional)</label>
+                            <input type="tel" class="form-control" name="phone" id="inputPhone"
+                                placeholder="###-###-####">
+                        </div>
+                        <div class="col-12 form-group">
+                            <label for="Subject" class="form-label">Subject</label>
+                            <input type="Subject" class="form-control" name="Subject" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageArea" class="form-label">Message</label>
+                            <textarea class="form-control" id="messageArea" rows="4" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div data-netlify-recaptcha="true">
+                    </div>
+                    <div class="col-12 d-flex justify-content-start pt-1">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
 
         </section>
 
     </main>
-    <footer></footer>
+    <footer class="container-fluid mt-5">
+        <div class="row footer-bg-cta">
+            <div class="col">
+                <div class="container footer-cta py-2">
+                    <div class="row align-items-center">
+                        <div class="col text-center">
+                            <h1>Let's Work Together</h1>
+                            <h4>Need something done? I'm open to new opportunities and ready to work!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-main">
+            <div class="col">
+                <div class="container p-3">
+                    <div class="row align-items-center gy-2">
+                        <div class="col d-flex justify-content-center justify-content-md-start order-last order-md-first">
+                            &copy; 2022 Joe Gastring
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/personalLogoDarkTransparent.png" height="50">
+                        </div>
+                        <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
+                            <a href="#" class="socialIcons p-2">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="socialIcons p-2">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Project Modals -->
     <div class="modal fade" id="projectOneModal" tabindex="-1" aria-labelledby="projectOneModalLabel"

@@ -17,6 +17,13 @@
     --jg-font-weight: 400;
     --jg-line-height: 1.5rem;
     --jg-title-color: var(--jg-dark-color);
+
+    --jg-formfocus-border-color: var(--jg-secondary-color);
+    --jg-formfocus-shadow: var(--jg-primary-color);
+    --jg-formfocus-background-color: var(--jg-background-color);
+
+    --jg-nav-toggler-glow: rgba(250,225,120,.55);
+    --jg-nav-toggler-color: var(--jg-highlight-color);
 }
 
 /* element Overides */
@@ -26,6 +33,69 @@ h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
     text-transform: uppercase;
     letter-spacing: .01rem;
     color: var(--jg-title-color);
+}
+
+#mainNav{
+    background-color: var(--jg-dark-color);
+}
+
+#mainNav button{
+    border-color: var(--jg-highlight-color);
+}
+
+/* Bootstrap Overrides */
+.navbar-toggler{
+    color: var(--jg-nav-toggler-glow) !important;
+}
+
+.navbar-toggler-icon-jg{
+    color: var(--jg-nav-toggler-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Button Override */
+.btn-outline-primary{
+    color: var(--jg-dark-color);
+    border-color: var(--jg-secondary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus{
+    border-color: var(--jg-highlight-color);
+    background-color: var(--jg-secondary-color);
+}
+
+.btn-primary{
+    color:white !important;
+    background-color: var(--jg-secondary-color) !important;
+    border-color: var(--jg-secondary-color);
+}
+
+.btn-primary:hover{
+    border-color: var(--jg-highlight-color);
+    filter: brightness(1.1) !important;
+}
+
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus{
+    filter: brightness(1.1) !important;
+    border-color: var(--jg-primary-color);
+}
+
+/* Form Overrides */
+.form-control, .form-select{
+    background-color:  var(--jg-background-color);
+}
+
+.form-control:focus,
+.form-select:focus{
+    background-color: var(--jg-formfocus-background-color);
+    border-color:var(--jg-formfocus-border-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--jg-formfocus-shadow);
 }
 
 html,body{
@@ -119,7 +189,31 @@ footer{
     flex-shrink: 0;
 }
 
-/* break_points */
+.footer-cta{
+    border-radius: 15px;
+    background-color: var(--jg-secondary-color);
+}
+
+.footer-bg-cta{
+    background: linear-gradient(
+        to bottom, var(--jg-background-color), var(--jg-background-color) 50%, var(--jg-dark-color) 50%, var(--jg-dark-color) 100%);
+}
+
+.footer-main{
+    background-color: var(--jg-dark-color);
+    color: var(--jg-light-color)
+}
+
+.socialIcons{
+    font-size: 2rem;
+    color: var(--jg-secondary-color);
+}
+
+a.socialIcons:hover{
+    color: var(--jg-highlight-color);
+}
+
+/* Media Queries Break_Points */
 @media (min-width: 575.98px){
     .mainHeader{
         background-image: url(/img/DevPortFolioBG_767.png);
