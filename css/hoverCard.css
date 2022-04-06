@@ -3,12 +3,12 @@
     Make sure the images are large enough that they dont stretch.
     Make sure all images are the same aspect ratio for best result.
     Note: Built with square cards in mind */
-.hc-wrapper {
+.hc-wrapper{
     display: flex;
     justify-content: center;
 }
 
-.hc-card {
+.hc-card{
     width: 225px;
     height: 225px;
     border-radius: 15px;
@@ -21,7 +21,7 @@
     box-shadow: 0px 7px 10px rgba(0, 0, 0, .5);
 }
 
-.hc-card img {
+.hc-card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,7 +32,7 @@
     border-radius: 15px;
 }
 
-.hc-card:before {
+.hc-card:before{
     content: "";
     position: absolute;
     top: 0%;
@@ -47,15 +47,15 @@
     opacity: 0;
 }
 
-.hc-card:hover::before {
+.hc-card:hover::before{
     opacity: 1;
 }
 
-.hc-card:hover {
+.hc-card:hover{
     transform: translateY(20px);
 }
 
-.hc-card .hc-content {
+.hc-card .hc-content{
     position: relative;
     z-index: 3;
     color: white;
@@ -64,18 +64,18 @@
     transition: .5s;
 }
 
-.hc-card:hover .hc-content {
+.hc-card:hover .hc-content{
     opacity: 1;
     transform: translateY(0px);
 }
 
-.hc-card .hc-content p {
+.hc-card .hc-content p{
     letter-spacing: 1px;
     font-size: .9;
     margin-top: .5rem;
 }
 
-.hc-card .hc-content button {
+.hc-card .hc-content button{
     padding: .6rem;
     outline: none;
     border: none;
