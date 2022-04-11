@@ -167,9 +167,11 @@ section{
     padding-top: 1rem;
     padding-bottom: 3rem;
 }
+
 .section-page:nth-child(even){
     background-color: var(--jg-light-color);
 }
+
 .section-page:nth-child(odd){
     background-color: var(--jg-primary-color);
 }
@@ -180,6 +182,7 @@ section{
     border-width: 1px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .devIcons{
     font-size: 5rem;
 }
