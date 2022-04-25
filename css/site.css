@@ -6,12 +6,12 @@
     --jg-body-font: 'Roboto', sans-serif;
     --jg-heading-font: 'Roboto', sans-serif;
     /* Theme Colors */
-    --jg-primary-color: rgb(145,203,251);
-    --jg-secondary-color: rgb(66,148,186);
-    --jg-highlight-color: rgb(250,225,120);
-    --jg-dark-color: rgb(33,33,33);
-    --jg-light-color: rgb(222,238,251);
-    --jg-background-color: rgba(250,250,250,.8);
+    --jg-primary-color: #d01110;
+    --jg-secondary-color: #d01110;
+    --jg-highlight-color: #ebe8e0;
+    --jg-dark-color: #0a0a00;
+    --jg-light-color: #ebe8e0;
+    --jg-background-color: #a8bbb0;
 
     --jg-font-size: 1.2rem;
     --jg-font-weight: 400;
@@ -22,7 +22,7 @@
     --jg-formfocus-shadow: var(--jg-primary-color);
     --jg-formfocus-background-color: var(--jg-background-color);
 
-    --jg-nav-toggler-glow: rgba(250,225,120,.55);
+    --jg-nav-toggler-glow: #d01110;
     --jg-nav-toggler-color: var(--jg-highlight-color);
 }
 
