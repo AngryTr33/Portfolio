@@ -193,12 +193,12 @@
                         <div class="hc-card">
                             <picture>
                                 <source srcset="/img/logos/BugTracker_600.jpg" media="min-width:991.98px">
-                                <img src="/img/bugTracker.jpg">
+                                <img src="/img/project_logos/bugTracker.png">
                             </picture>
                             <div class="hc-content">
                                 <p>A full-stack bug tracker</p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#projectOneModal">Learn More</button>
+                                    data-bs-target="#projectOneModal">Under Construction</button>
                             </div>
                         </div>
                     </div>
@@ -208,12 +208,12 @@
                         <div class="hc-card">
                             <picture>
                                 <source srcset="/img/logos/blog_600.jpg" media="min-width:991.98px">
-                                <img src="/img/blog.jpg">
+                                <img src="/img/project_logos/blog.png">
                             </picture>
                             <div class="hc-content">
                                 <p>My personal blog</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#projectTwoModal">Learn More</button>
+                                <a type="button" class="btn btn-primary" href="http://jgblog.herokuapp.com/"
+                                    target="_blank">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -223,12 +223,12 @@
                         <div class="hc-card">
                             <picture>
                                 <source srcset="/img/logos/ExpenseTracker_600.jpg" media="min-width:991.98px">
-                                <img src="/img/addressBook.jpg">
+                                <img src="/img/project_logos/addressBook.png">
                             </picture>
                             <div class="hc-content">
                                 <p>Address consolidation app</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#projectThreeModal">Learn More</button>
+                                <a type="button" class="btn btn-primary" href="http://jg-address-book.herokuapp.com/"
+                                    target="_blank">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -369,7 +369,7 @@
                     </div>
                 </article>
                 <article class="card mb-4 blog-article">
-                    <div class="row g-0 blog-row">
+                    <div class="row g-0 blog-row" id="blog1">
                         <div class="col-md-4 blog-header">
                             <a class="blog-image-link" href="#">
                                 <img src="/img/blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Glying Girl SQL">
@@ -810,6 +810,22 @@
                     }
                 });
             });
+        });
+    </script>
+
+    <script>
+        fetch('//jgblog.herokuapp.com/api/BlogPostsApi?num1')
+        .then(response => response.json())
+        .then(function(data){
+            alert(JSON.stringify(data));
+            //work to create the data
+            let choices = {
+                weekday: 'short',
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            }
+
         });
     </script>
 
